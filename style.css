@@ -13,7 +13,7 @@
 html,body{
     height:100%;
     width:100%;
-    background-color:#81D8D0;
+    background-color:var(--white);
 }
 .navbar{
     height:5vw;
@@ -24,6 +24,7 @@ html,body{
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    
 }
 .nav-logo{
     height:100%;
@@ -31,6 +32,7 @@ html,body{
     display: flex;
     justify-content:flex-start;
     align-items: center;
+   
 }
 .logo{
     margin-left:0.5rem;
@@ -165,6 +167,7 @@ main{
     border-radius: 10px;
     background-color:var(--gray);
     margin-top: 1rem;
+    display: inline-block;
 }
 
 .hero-prj{
@@ -177,6 +180,7 @@ main{
     border-radius: 10px;
     background-color:var(--gray);
      margin-top: 1rem;
+       display: inline-block;
 }
 
 /* hero responsive start */
@@ -184,17 +188,20 @@ main{
 {
 .hero{   
     justify-content: center;
-   
+    
+}
+.hero-data{
+    line-height: 2.5rem;
 }
 .hero-data h1{
-    font-size: 4.5vw;
+    font-size: 6vw;
 }
 .hero-data h2{
-    font-size: 2vw;
+    font-size: 4vw;
     font-weight: 900;
 }
 .hero-info{
-    font-size:1.5vw;
+    font-size:2vw;
 }
 .btn-card{
     width:90%;
@@ -220,14 +227,14 @@ main{
 @media(max-width:600px)
 {
 .hero-data h1{
-    font-size: 5vw;
+    font-size: 8vw;
 }
 .hero-data h2{
-    font-size: 4vw;
+    font-size: 6vw;
     font-weight: 900;
 }
 .hero-info{
-    font-size:2vw;
+    font-size:3vw;
 }
 .btn-card{
     width:90%;
@@ -236,43 +243,545 @@ main{
     justify-content: center;
     align-items: center;
     gap:10vw;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 .hero-msg{
-    font-size: 1.5vw;
-    width:12vw;
-    height:4vw;
+    font-size: 2vw;
+    width:15vw;
+    height:6vw;
 }
 .hero-prj{
-    font-size: 1.5vw;
-     width:12vw;
-    height:4vw;
+    font-size: 2vw;
+     width:15vw;
+    height:6vw;
 }
 }
 /* hero responsive end */
+
 .hero2{
-height:40vw;
-width:100vw;
-background-color: transparent;
+height:auto;
+width:100%;
+
 display: flex;
 justify-content: center;
 align-items: center;
+flex-wrap: wrap;
 }
 
-.hero2-name h1{
-    font-size:4.5rem;
-    background-image: url("img/liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper.jpg");
+
+.hero2-name h1 {
+    font-size: 4.5rem;
+    background-image: url("img/y1.jpeg");
     background-size: cover;
     background-clip: text;
     color: transparent;
-    position: relative;
 }
 
-.hero2-name h1.bloom{
-    font-size:4.5rem;
-    background-image: url("img/liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper.jpg");
+.card-container{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem;
+    gap:1rem;
+
+}
+
+.card1{
+    width:30vw; 
+    height:35vw;
+    background-color: #81d8d0;
+    border-radius: 0.5rem;
+    border:2px solid #81d8d0;
+    padding:0.4rem;
+}
+.card1 div.img1{
+    height:50%;
+    width: 100%;
+    background-image: url("img/p1.png");
+    background-size: cover;
+    border-radius: 0.6rem;
+}
+
+.card-info h2{
+    padding: 0.6rem;
+    font-size: 3rem;
+}
+.card-info p{
+    width:100%;
+    padding-left: 0.6rem;
+}
+.card-info button{
+    margin:1rem  0  0 0.6rem;
+    height: 2.6vw;
+    width:6vw;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight:600;
+    border-radius: 999px;
+    background-color: var(--gray);
+}
+.card2{
+     width:30vw; 
+     height:35vw;
+    background-color: #81d8d0;
+     border-radius: 0.6rem;
+      padding:0.4rem;
+}
+.card2 div.img2{
+    height:50%;
+    background-image: url("img/p3.png");
+    background-size: cover;
+    border-radius: 0.6rem ;
+}
+
+.card3{
+     width:30vw;
+     height:35vw;
+     background-color: #81d8d0;
+     border-radius: 0.6rem;
+      padding:0.4rem;
+}
+.card3 div.img3{
+    width:100%;
+    height:50%;
+    background-image: url("img/p2.png");
+    background-size: cover;
+    border-radius: 0.6rem ;
+}
+
+/* hero2 responsive start */
+
+@media(max-width:1250px){
+.card-info h2{
+    font-size: 2.5rem;
+    padding:0.2rem;
+}
+.hero2-name h1 {
+    font-size: 4rem;
+    background-image: url("img/y1.jpeg");
     background-size: cover;
     background-clip: text;
     color: transparent;
-    position:absolute;
+}
+.card-info p{
+    font-size: 0.8rem;
+    color: black;
+}
+.card-info button{
+    margin:0.3rem;
+    height: 2.6vw;
+    width:6vw;
+    border: none;
+    outline: none;
+    font-size: 0.7rem;
+    font-weight:600;
+    border-radius: 999px;
+    background-color: var(--gray);
+}
+}
+
+@media(max-width:945px)
+{
+ .hero2-name h1 {
+    font-size: 3.5rem;
+    background-image: url("img/y1.jpeg");
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+.card1{
+    height:50vw;
+    width:50%;
+    margin:0 5rem;
+}
+.card2{
+    height:50vw;
+    width:50%;
+    margin:0 5rem;
+}
+.card3{
+    height:50vw;
+    width:50%;
+    margin:0 5rem;
+}
+.card-info h2{
+    font-size: 3rem;
+    padding:0.3rem;
+}
+.card-info p{
+    font-size: 0.9rem;
+    color: black;
+}
+.card-info button{
+    height: 4vw;
+    width:8vw;
+    border: none;
+    outline: none;
+    font-size: 0.6rem;
+    font-weight:600;
+    border-radius: 999px;
+    background-color: var(--gray);
+}
+}
+
+@media(max-width:760px)
+{
+    .hero2-name h1 {
+    font-size: 3.5rem;
+    background-image: url("img/y1.jpeg");
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+.card1{
+    height:60vw;
+    width:50%;
+    margin:0 5rem;
+}
+.card2{
+    height:60vw;
+    width:50%;
+    margin:0 5rem;
+}
+.card3{
+    height:60vw;
+    width:50%;
+    margin:0 5rem;
+}
+}
+
+@media(max-width:685px)
+{
+.card1{
+    height:65vw;
+    width:60%;
+    margin:0 5rem;
+}
+.card2{
+    height:65vw;
+    width:60%;
+    margin:0 5rem;
+}
+.card3{
+    height:65vw;
+    width:60%;
+    margin:0 5rem;
+}
+.card-container{
+        padding: 1rem;
+    }
+    .hero2-name{
+      margin-top:5rem;
+}
+}
+@media(max-width:585px)
+{
+.hero2-name h1 {
+    font-size: 3rem;
+    background-image: url("img/y1.jpeg");
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+.card1{
+    height:70vw;
+    width:70%;
+    /* margin:0 5rem; */
+}
+.card2{
+    height:70vw;
+    width:70%;
+    margin:0 5rem;
+}
+.card3{
+    height:70vw;
+    width:70%;
+    margin:0 5rem;
+}
+.card-info h2{
+    font-size: 2.5rem;
+    padding:0.4rem;
+}
+.card-info p{
+    font-size: 0.8rem;
+    color: black;
+}
+.card-container{
+        padding: 1rem;
+    }
+}
+
+@media(max-width:470px)
+{
+    .card-container{
+        padding: 0rem;
+    }
+ .card1{
+    height:85vw;
+    width:100%;
+    margin:0 5rem;
+}
+.card2{
+    height:85vw;
+    width:100%;
+    margin:0 5rem;
+}
+.card3{
+    height:85vw;
+    width:100%;
+    margin:0 5rem;
+}
+.card-info h2{
+    font-size: 2.5rem;
+    padding:0.2rem;
+}
+.card-info p{
+    font-size: 0.8rem;
+    color: black;
+}   
+}
+/* hero2 responsive end */
+
+/*  skills section start */
+.skills-container{
+    height: 100%;
+    width:100%;
+    /* background-color:brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: monospace;
+}
+.skills-heading{
+    width:70%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.skills-heading h1{
+    color:#81d8d0;
+    font-size:5vw;
+    font-weight: 900;
+}
+.skills-container h3{
+    color: var(--gray);
+    font-size: 1.5vw;
+}
+
+.skills-cards{
+    width:100%;
+    height:100%;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.scard{
+    width:14vw;
+    height:35%;
+    margin:3rem;
+    border-radius: 1rem;
+}
+.scard p{
+    padding:0.7rem;
+}
+.html{
+    height:100%;
+    width:100%;
+    background-size: cover;
+    border-radius: 1rem 1rem;
+}
+.css{
+    height:100%;
+    width:100%;
+    background-size: cover;
+    border-radius: 1rem 1rem;
+}
+.js{
+    height:100%;
+    width:100%;
+    background-size: cover;
+    border-radius: 1rem 1rem;
+}
+
+.git{
+    height:100%;
+    width:100%;
+    background-size: cover;
+    border-radius: 1rem 1rem;
+}
+.seo{
+    height:100%;
+    width:100%;
+    background-size: cover;
+    border-radius: 1rem 1rem;
+}
+.node{
+    height:100%;
+    width:100%;
+    background-image: url("img/nodejs.webp");
+    background-size: cover;
+    border-radius: 1rem 1rem;
+}
+.react{
+    height:100%;
+    width:100%;
+    background-image: url("img/react.png");
+    background-size: cover;
+    border-radius: 1rem 1rem;
+}
+.mongo{
+    height:100%;
+    width:100%;
+    background-image: url("img/mongo.png");
+    background-size: cover;
+    border-radius: 1rem 1rem;
+}
+.scard p{
+    text-align: center;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--gray);
+}
+@media(max-width:1400px)
+{
+    .scard{
+    width:14vw;
+    height:30%;
+    margin:3rem;
+    border-radius: 1rem;
+    }
+    .scard{
+    width:14vw;
+    height:35%;
+    margin:2rem;
+    border-radius: 1rem;
+    }
+    .skills-container h3{
+    color: var(--gray);
+    font-size: 1.6vw;
+}
+}
+@media(max-width:1200px)
+{
+    .scard{
+    width:20vw;
+    height:30%;
+    margin:3rem;
+    border-radius:1rem;
+    }
+.skills-heading h1{
+    color:#81d8d0;
+    font-size:6vw;
+    font-weight: 900;
+}
+.skills-container h3{
+    color: var(--gray);
+    font-size: 1.7vw;
+}
+}
+
+@media(max-width:1000px)
+{
+    .scard{
+    width:20vw;
+    height:25%;
+    margin:3rem;
+    border-radius:1rem;
+    }
+    .skills-heading h1{
+    color:#81d8d0;
+    font-size:6vw;
+    font-weight: 900;
+}
+.skills-container h3{
+    color: var(--gray);
+    font-size: 2vw;
+}
+}
+@media(max-width:800px)
+{
+    .scard{
+    width:20vw;
+    height:20%;
+    margin:2rem;
+    border-radius:1rem;
+    }
+    .skills-heading h1{
+    color:#81d8d0;
+    font-size:6vw;
+    font-weight: 900;
+}
+.skills-container h3{
+    color: var(--gray);
+    font-size: 2vw;
+}
+}
+@media(max-width:600px)
+{
+    .scard{
+    width:30vw;
+    height:15%;
+    margin:2rem;
+    border-radius:1rem;
+    }
+     .skills-heading h1{
+    color:#81d8d0;
+    font-size:7vw;
+    font-weight: 900;
+}
+.skills-container h3{
+    color: var(--gray);
+    font-size: 2.5vw;
+}
+}
+@media(max-width:400px)
+{
+    .scard{
+    width:30vw;
+    height:10%;
+    margin:2rem;
+    border-radius:1rem;
+    }
+     .skills-heading h1{
+    color:#81d8d0;
+    font-size:8vw;
+    font-weight: 900;
+}
+.skills-container h3{
+    color: var(--gray);
+    font-size: 3vw;
+}
+}
+/*  skills section end */
+.footer-links{
+    width: 100%;
+    height: 5vw;
+    background-color: #58c9c2;
+    margin:100px 0 0 0;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: 1.5rem;
+}
+
+@media(max-width:1800px){
+     .footer-links{
+         margin:1500px 0 0 0; 
+     }
+    }
+@media(max-width:953px){
+     .footer-links{
+         margin:2200px 0 0 0; 
+     }
+
 }
